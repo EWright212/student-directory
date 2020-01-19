@@ -97,3 +97,13 @@ def print(students)
   end
 end
 =end
+
+=begin
+# modified for step 8 part 8
+def print(students)
+  list = students.sort_by{ |student| student[:cohort]}
+  list.each do |student|
+    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+  end
+end
+=end
